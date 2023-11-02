@@ -17,7 +17,6 @@ test_bob_has_slot :-
         (meetone(Person, slot(time(8,30,am),time(8,45,am))),
         Person \= bob), % Exclude Bob
         People),
-    % Bob is the only person who should have this slot available
     assert_equal(Person, [ann,bob,carla], "Availability at 8:30 AM Test").
 
 % Define a predicate to assert whether two lists are equal.
